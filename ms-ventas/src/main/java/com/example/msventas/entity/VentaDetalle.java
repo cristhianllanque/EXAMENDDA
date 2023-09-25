@@ -1,9 +1,7 @@
 package com.example.msventas.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.msventas.dto.Producto;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -17,6 +15,9 @@ public class VentaDetalle {
     private Double subtotal;
     private Double total_factura;
     private Integer productoId;
+
+    @Transient
+    private Producto producto;
 
     public VentaDetalle(){
         this.cantidad = (double) 0;

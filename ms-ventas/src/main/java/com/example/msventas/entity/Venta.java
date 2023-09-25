@@ -1,12 +1,13 @@
 package com.example.msventas.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.msventas.dto.Cliente;
+import com.example.msventas.dto.Producto;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -17,6 +18,12 @@ public class Venta {
     private Integer id_cliente;
     private Date fecha;
     private Float total_venta;
-
+    private Integer clienteId;
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "venta_id")
+    private List<VentaDetalle> ventaDetalles;
+   @Transient
+    private Cliente cliente;
 
 }
