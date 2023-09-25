@@ -17,6 +17,11 @@ public class ProductoServiceImpl implements ProductoService {
     }
 
     @Override
+    public Producto actualizarProducto(Long id, Producto producto) {
+        return null;
+    }
+
+    @Override
     public Producto obtenerProductoPorId(Long id) {
         return productoRepository.findById(id).orElse(null);
     }
