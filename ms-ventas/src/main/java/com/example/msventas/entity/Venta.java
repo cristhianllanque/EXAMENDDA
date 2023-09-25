@@ -1,7 +1,6 @@
 package com.example.msventas.entity;
 
 import com.example.msventas.dto.Cliente;
-import com.example.msventas.dto.Producto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
