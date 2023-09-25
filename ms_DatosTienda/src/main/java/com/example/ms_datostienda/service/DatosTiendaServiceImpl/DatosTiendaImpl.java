@@ -14,7 +14,7 @@ import java.util.Optional;
 public class DatosTiendaImpl implements DatosTiendaService {
 
 @Autowired
-private DatosTiendaRepository datosTiendaRepository
+private DatosTiendaRepository datosTiendaRepository;
     @Override
     public List<DatosTienda> listar() {
         return datosTiendaRepository.findAll() ;

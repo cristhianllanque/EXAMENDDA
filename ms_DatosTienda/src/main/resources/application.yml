@@ -1,6 +1,6 @@
 spring:
 application:
-name: ms-Datos-Tienda
+name: ms-datos-tienda
 profiles:
 active: development
 config:
