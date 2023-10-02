@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
-import java.util.List;
+import java.util.List; // Importación que faltaba
 
 @RestController
 @RequestMapping("/api/productos")
@@ -15,18 +16,7 @@ public class ProductoController {
     @Autowired
     private ProductoService productoService;
 
-    @PostMapping
-    public ResponseEntity<Producto> crearProducto(@RequestBody Producto producto) {
-        Producto nuevoProducto = productoService.guardarProducto(producto);
-        return new ResponseEntity<>(nuevoProducto, HttpStatus.CREATED);
-    }
-
-    @GetMapping
-    public ResponseEntity<List<Producto>> obtenerTodosLosProductos() {
-        List<Producto> productos = productoService.obtenerTodosLosProductos();
-        return new ResponseEntity<>(productos, HttpStatus.OK);
-    }
-
+    @CircuitBreaker(name = "obtenerProductoPorIdCB", fallbackMethod = "fallbackObtenerProductoPorId")
     @GetMapping("/{id}")
     public ResponseEntity<Producto> obtenerProductoPorId(@PathVariable Long id) {
         Producto producto = productoService.obtenerProductoPorId(id);
@@ -35,6 +25,25 @@ public class ProductoController {
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+    }
+
+    private ResponseEntity<Producto> fallbackObtenerProductoPorId(Long id, RuntimeException e) {
+        // Lógica de respaldo en caso de fallo
+        Producto producto = new Producto();
+        producto.setId(90000);
+        return ResponseEntity.ok().body(producto);
+    }
+
+    @PostMapping
+    public ResponseEntity<Producto> crearProducto(@RequestBody Producto producto) {
+        Producto nuevoProducto = productoService.guardarProducto(producto);
+        return new ResponseEntity<>(nuevoProducto, HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Producto> obtenerTodosLosProductos() {
+        List<Producto> productos = productoService.obtenerTodosLosProductos();
+        return new ResponseEntity<>(productos, HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
