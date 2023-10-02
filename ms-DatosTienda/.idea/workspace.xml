@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="" />
+    <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../config-data/ms-venta-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/ms-venta-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-ventas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-ventas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-ventas/src/main/java/com/example/msventas/controller/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-ventas/src/main/java/com/example/msventas/controller/VentaController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/DADEXAMEN/EXAMENDDA/ms_DatosTienda",
+    "last_opened_file_path": "/Users/gary/Desktop/CLone/EXAMENDDA/ms-DatosTienda",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +53,7 @@
       <updated>1695618642962</updated>
       <workItem from="1695618643965" duration="163000" />
       <workItem from="1695646728326" duration="805000" />
+      <workItem from="1696207344551" duration="547000" />
     </task>
     <servers />
   </component>

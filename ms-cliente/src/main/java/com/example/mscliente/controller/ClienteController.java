@@ -30,4 +30,9 @@ public class ClienteController {
     public String deleteById(@PathVariable(required = true) Integer id) {clienteService.eliminarPorId(id);
         return "Eliminacion Correcta";
     }
+    private ResponseEntity<Cliente> fallBackVentaListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
+        Cliente cliente = new Cliente();
+        cliente.setId(90000);
+        return ResponseEntity.ok().body(cliente);
+    }
 }
