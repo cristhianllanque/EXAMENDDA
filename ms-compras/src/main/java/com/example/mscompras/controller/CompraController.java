@@ -47,7 +47,7 @@ public class CompraController {
         Proveedor proveedor = new Proveedor();
         proveedor.setNombre("Recurso no disponible del nombre del proveedor");
         proveedor.setDireccion("no tiene direccion");
-        proveedor.set(proveedor);
+        //proveedor.set(proveedor);
         return ResponseEntity.ok().body(compras);
     }
 

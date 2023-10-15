@@ -24,7 +24,7 @@ public class ProductoController {
     public ResponseEntity<Producto> save(@RequestBody Producto producto) {return ResponseEntity.ok(productoService.guardar(producto));
     }
     @PutMapping()
-    public ResponseEntity<Producto> update(@RequestBody Producto producto) {return ResponseEntity.ok(productoService.actualizar(proveedores));
+    public ResponseEntity<Producto> update(@RequestBody Producto producto) {return ResponseEntity.ok(productoService.actualizar(producto));
     }
     @CircuitBreaker(name = "productoListerPorIdCB", fallbackMethod = "fallBackProductoListarPorIdCB")
     @GetMapping("/{id}")

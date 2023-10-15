@@ -11,6 +11,4 @@ public class Proveedor {
     private String correo;
     private String productos_suministrados;
 
-    public void set(Proveedor proveedor) {
-    }
 }

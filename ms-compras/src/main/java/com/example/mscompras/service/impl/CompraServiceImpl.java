@@ -49,7 +49,7 @@ public class CompraServiceImpl implements CompraService {
             return comprasDetalle;
         }).collect(Collectors.toList());
         compras.setComprasDetalles(comprasDetalles);
-        compras.setProveedor(proveedor);
+        //compras.setProveedor(proveedor);
         return Optional.of(compras);
     }
 
