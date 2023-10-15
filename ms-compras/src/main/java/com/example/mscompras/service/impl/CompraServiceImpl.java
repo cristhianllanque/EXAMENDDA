@@ -43,12 +43,12 @@ public class CompraServiceImpl implements CompraService {
     public Optional<Compras> listarPorId(Integer id) {
         Compras compras = compraRepository.findById(id).get();
         Proveedor proveedor = proveedorFeign.listById(compras.getProveedorID()).getBody();
-        List<ComprasDetalle> comprasDetalles = compras.getComprasDetalles().stream().map(comprasDetalle -> {
-            Producto producto = productoFeign.listById(comprasDetalle.getProductoId()).getBody();
-            comprasDetalle.setProducto(producto);
-            return comprasDetalle;
-        }).collect(Collectors.toList());
-        compras.setComprasDetalles(comprasDetalles);
+        //List<ComprasDetalle> comprasDetalles = compras.getComprasDetalles().stream().map(comprasDetalle -> {
+            //Producto producto = productoFeign.listById(comprasDetalle.getProductoId()).getBody();
+            //comprasDetalle.setProducto(producto);
+            //return comprasDetalle;
+        //}).collect(Collectors.toList());
+        //compras.setComprasDetalles(comprasDetalles);
         //compras.setProveedor(proveedor);
         return Optional.of(compras);
     }

@@ -22,6 +22,6 @@ public class Compras {
     @JoinColumn(name = "compra_id")
     private List<ComprasDetalle> comprasDetalles;
     @Transient
-    private Proveedor cliente;
+    private Proveedor proveedor;
 
 }
