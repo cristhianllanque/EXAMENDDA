@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../config-data/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/controller/ProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Categoria.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/repository/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/repository/ProductoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/service/ProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/service/impl/ProductoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/service/impl/ProductoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/controller/ProductoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/entity/Categoria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/entity/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/repository/ProductoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/service/ProductoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/service/impl/ProductoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-productos/src/test/java/com/example/msproductos/MsProductosApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +55,7 @@
       <workItem from="1696207344551" duration="547000" />
       <workItem from="1696214152923" duration="614000" />
       <workItem from="1697339503301" duration="112000" />
-      <workItem from="1697406443886" duration="621000" />
+      <workItem from="1697406443886" duration="1224000" />
     </task>
     <servers />
   </component>
