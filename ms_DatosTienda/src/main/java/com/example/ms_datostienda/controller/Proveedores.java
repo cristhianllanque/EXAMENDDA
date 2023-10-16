@@ -10,4 +10,5 @@ public class Proveedores {
     private String dirreccion;
     private Integer telefono;
     private String suministracion;
+
 }
