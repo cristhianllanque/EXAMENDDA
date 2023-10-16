@@ -1,26 +1,32 @@
 package com.example.msproductos.entity;
 
-import jakarta.persistence.*;
-import jdk.jfr.Category;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
+@Table(name = "Productos")
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String mombre;
+    private Integer id;
+    private String nombreProducto;
+    private String marca;
+    private String imei;
+    private String color;
     private String descripcion;
-    private double precioVenta;
-    private double getPrecioCompra;
-    private int catidadEnStoock;
+    private BigDecimal precio;
+    private Integer stockDisponible;
+    private String numeroSerie;
+    private String especificacionesTecnicas;
+    private String estadoProducto;
+    private String categoriaTipo;
+    private Date fechaIngreso;
 
-    @ManyToOne
-    @JoinColumn(name = "categoria_id")
-    private Categoria categoria;
-
-    public void setID_Producto(Long id) {
+    public void setId(int i) {
     }
-
-    //---
 }
