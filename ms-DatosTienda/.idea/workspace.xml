@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../config-data/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-ventas/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-ventas/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/RESI/EXAMENDDA/ms-DatosTienda&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DAD-2023-4/EXAMENDDA/ms-DatosTienda&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -56,6 +56,8 @@
       <workItem from="1697339503301" duration="112000" />
       <workItem from="1697406443886" duration="1224000" />
       <workItem from="1697420570829" duration="1046000" />
+      <workItem from="1697461494758" duration="45000" />
+      <workItem from="1697462033425" duration="126000" />
     </task>
     <servers />
   </component>
