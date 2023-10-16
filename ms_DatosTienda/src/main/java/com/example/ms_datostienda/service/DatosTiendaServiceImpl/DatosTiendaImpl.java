@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 
@@ -33,7 +34,8 @@ private DatosTiendaRepository datosTiendaRepository;
 
     @Override
     public Optional<DatosTienda> listarPorId(Integer id) {
-        return datosTiendaRepository.findById(id);
+        DatosTienda datosTienda = datosTiendaRepository.findById(id).get();
+        return Optional.empty();
     }
 
     @Override
