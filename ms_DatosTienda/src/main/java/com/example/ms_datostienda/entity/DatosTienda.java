@@ -10,6 +10,7 @@ import java.util.List;
 
 @Entity
 @Data
+@Table(name = "DatosTienda")
 public class DatosTienda {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,12 +19,7 @@ private String nombre;
 private String telefono;
 private String direcion;
 private String razon;
-    private Integer ProveedoresId;
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "datostienda_id")
-    private List<DatosTiendaDetalle> datosTiendaDetalles;
-    @Transient
-    private Proveedores proveedores;
+private String suministrar;
+private String proveedores;
 
 }

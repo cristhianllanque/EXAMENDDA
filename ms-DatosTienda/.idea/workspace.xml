@@ -7,6 +7,12 @@
     <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../config-data/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/entity/DatosTienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/entity/DatosTienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/service/DatosTiendaServiceImpl/DatosTiendaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/service/DatosTiendaServiceImpl/DatosTiendaImpl.java" afterDir="false" />
+>>>>>>> ba93368f15e33d234b8042a4e17c9b28f302cdf7
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -39,8 +46,22 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/ciclo 5/DAD Atualli/EXAMENDDA/ms-DatosTienda",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> ba93368f15e33d234b8042a4e17c9b28f302cdf7
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,8 +77,12 @@
       <workItem from="1697339503301" duration="112000" />
       <workItem from="1697406443886" duration="1224000" />
       <workItem from="1697420570829" duration="1046000" />
+<<<<<<< HEAD
       <workItem from="1697461494758" duration="45000" />
       <workItem from="1697462033425" duration="126000" />
+=======
+      <workItem from="1697461362652" duration="997000" />
+>>>>>>> ba93368f15e33d234b8042a4e17c9b28f302cdf7
     </task>
     <servers />
   </component>
