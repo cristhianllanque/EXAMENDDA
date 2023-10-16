@@ -16,7 +16,7 @@ public class Compras {
     private String Marca;
     private String Categoria;
     private String Descripcion;
-    private Integer ProveedorID;
+    private Integer ProveedorId;
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "compra_id")
