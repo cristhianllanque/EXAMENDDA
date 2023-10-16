@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-ventas/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-ventas/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/entity/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/entity/DatosTienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/entity/DatosTienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/service/DatosTiendaServiceImpl/DatosTiendaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms_DatosTienda/src/main/java/com/example/ms_datostienda/service/DatosTiendaServiceImpl/DatosTiendaImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,20 +29,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/RESI/EXAMENDDA/ms-DatosTienda&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/ciclo 5/DAD Atualli/EXAMENDDA/ms-DatosTienda",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +58,7 @@
       <workItem from="1697339503301" duration="112000" />
       <workItem from="1697406443886" duration="1224000" />
       <workItem from="1697420570829" duration="1046000" />
+      <workItem from="1697461362652" duration="997000" />
     </task>
     <servers />
   </component>
