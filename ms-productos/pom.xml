@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.3</version>
+		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>ms-pedido</artifactId>
+	<artifactId>ms-compras</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-pedido</name>
-	<description>ms-pedido</description>
+	<name>ms-productos</name>
+	<description>ms-productos</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.4</spring-cloud.version>
@@ -40,7 +40,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-
 			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
 		</dependency>
 
