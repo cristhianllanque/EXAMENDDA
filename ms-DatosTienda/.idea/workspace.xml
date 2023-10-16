@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d426900-4bb4-40d6-acb7-88cc7a37d41f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../config-data/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-data/ms-compra-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/ms-compra-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-data/ms-producto-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/ms-producto-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/java/com/example/msproductos/controller/ProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-productos/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-productos/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-ventas/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-ventas/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
