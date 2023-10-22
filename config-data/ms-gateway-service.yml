@@ -1,27 +1,43 @@
 server:
   port: 8080
-
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://localhost:8090/eureka
+      defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
+  instance:
+    #hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enable: true
       routes:
+        - id: ms-producto-service
+          uri: lb://ms-producto-service
+          predicates:
+            - Path=/producto/**
+          filters:
+            - AuthFilter
+        - id: ms-venta-service
+          uri: lb://ms-venta-service
+          predicates:
+            - Path=/venta/**
+        - id: ms-cliente-service
+          uri: lb://ms-cliente-service
+          predicates:
+            - Path=/cliente/**
         - id: ms-proveedores-service
           uri: lb://ms-proveedores-service
           predicates:
             - Path=/proveedores/**
-          filters:
-            - SetPath=/proveedores
-            - RewritePath=/proveedores/(?<segment>.*), /$\{segment}
-            - name: Cors
-              args:
-                config:
-                  allowed-origins: "http://localhost:3000"
-                  allowed-methods: "GET,POST,PUT,DELETE"
-                  allowed-headers: "*"
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        - id: ms-compra-service
+          uri: lb://ms-compra-service
+          predicates:
+            - Path=/compra/**
+        - id: ms-auth-service
+          uri: lb://ms-auth-service
+          predicates:
+            - Path=/auth/**
