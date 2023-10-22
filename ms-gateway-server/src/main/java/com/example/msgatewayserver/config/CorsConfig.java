@@ -6,7 +6,7 @@ import org.springframework.web.cors.reactive.CorsWebFilter;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 @Configuration
 public class CorsConfig {
-    @Bean
+    /*@Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.applyPermitDefaultValues(); // Permite las configuraciones CORS predeterminadas
@@ -15,5 +15,5 @@ public class CorsConfig {
         source.registerCorsConfiguration("/**", corsConfig);
 
         return new CorsWebFilter(source);
-    }
+    }*/
 }
