@@ -3,6 +3,7 @@ package com.example.msproductos.controller;
 import com.example.msproductos.entity.Producto;
 import com.example.msproductos.service.ProductoService;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
