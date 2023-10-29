@@ -35,6 +35,12 @@ spring:
           uri: lb://ms-venta-service
           predicates:
             - Path=/venta/**
+
+        - id: ms-opiniones-service
+          uri: lb://ms-opiniones-service
+          predicates:
+            - Path=/opiniones/**
+
         - id: ms-cliente-service
           uri: lb://ms-cliente-service
           predicates:

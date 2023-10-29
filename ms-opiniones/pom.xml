@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>ms-productos</artifactId>
+	<artifactId>ms-opiniones</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-productos</name>
-	<description>ms-productos</description>
+	<name>ms-opiniones</name>
+	<description>ms-opiniones</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.4</spring-cloud.version>
@@ -68,6 +68,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
