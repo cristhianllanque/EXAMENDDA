@@ -48,8 +48,7 @@ spring:
           uri: lb://ms-proveedores-service
           predicates:
             - Path=/proveedores/**
-          filters:
-            - AuthFilter
+          
         - id: ms-compra-service
           uri: lb://ms-compra-service
           predicates:
