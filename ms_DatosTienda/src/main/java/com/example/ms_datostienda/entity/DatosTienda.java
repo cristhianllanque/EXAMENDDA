@@ -1,12 +1,7 @@
 package com.example.ms_datostienda.entity;
 
-import com.example.ms_datostienda.controller.Proveedores;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.util.Date;
-import java.util.List;
 
 @Entity
 @Data

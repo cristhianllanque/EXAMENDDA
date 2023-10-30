@@ -28,7 +28,7 @@ public class DatosTiendaController {
         return ResponseEntity.ok(datosTiendaService.actualizar(datosTienda));
     }
     @GetMapping("/{id}")
-    @CircuitBreaker(name = "ProveedoreslistarPorIdCB", fallbackMethod = "fallBackProveedoreslistarPorIdCB")
+    @CircuitBreaker(name = "DatosTiendaPorIdCB", fallbackMethod = "fallBackDatosTiendaListarPorIdCB")
     public ResponseEntity<DatosTienda> listById(@PathVariable(required = true)Integer id){
         return ResponseEntity.ok().body(datosTiendaService.listarPorId(id).get());
 
@@ -41,10 +41,10 @@ public class DatosTiendaController {
 
     }
 
-    private ResponseEntity<Producto> fallBackProductoListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
-        Producto producto = new Producto();
-        producto.setId(90000);
-        return ResponseEntity.ok().body(producto);
+    private ResponseEntity<DatosTienda> fallBackProductoListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
+        DatosTienda datosTienda = new DatosTienda();
+        datosTienda.setId(90000);
+        return ResponseEntity.ok().body(datosTienda);
 
     }
 
