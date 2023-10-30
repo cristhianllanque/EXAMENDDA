@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@CrossOrigin(origins = "http://localhost:4200")
+import java.util.Optional;
 @RestController
 @RequestMapping("/proveedores")
 public class ProveedoresController {
@@ -19,10 +19,12 @@ public class ProveedoresController {
         return ResponseEntity.ok().body(proveedoresService.listar());
     }
     @PostMapping()
-    public ResponseEntity<Proveedores> save(@RequestBody Proveedores proveedores) {return ResponseEntity.ok(proveedoresService.guardar(proveedores));
+    public ResponseEntity<Proveedores> save(@RequestBody Proveedores proveedores) {
+        return ResponseEntity.ok(proveedoresService.guardar(proveedores));
     }
     @PutMapping()
-    public ResponseEntity<Proveedores> update(@RequestBody Proveedores proveedores) {return ResponseEntity.ok(proveedoresService.actualizar(proveedores));
+    public ResponseEntity<Proveedores> update(@RequestBody Proveedores proveedores) {
+        return ResponseEntity.ok(proveedoresService.actualizar(proveedores));
     }
     @CircuitBreaker(name = "proveedoresListarPorIdCB", fallbackMethod = "fallBackProveedoresListarPorIdCB")
     @GetMapping("/{id}")
@@ -32,7 +34,7 @@ public class ProveedoresController {
 
     @DeleteMapping("/{id}")
     public String deleteById(@PathVariable(required = true) Integer id) {proveedoresService.eliminarPorId(id);
-        return "Eliminacion Correcta";
+        return "";
     }
     private ResponseEntity<Proveedores> fallBackProveedoresListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
         Proveedores proveedores = new Proveedores();
