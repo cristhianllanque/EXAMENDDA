@@ -56,6 +56,12 @@ spring:
           uri: lb://ms-compra-service
           predicates:
             - Path=/compra/**
+
+        - id: ms-DatosTienda-service
+          uri: lb://ms-DatosTienda-service
+          predicates:
+            - Path=/DatosTienda/**
+
           filters:
             - AuthFilter
         - id: ms-auth-service
