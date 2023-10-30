@@ -65,8 +65,7 @@ spring:
           uri: lb://ms-datos-tienda
           predicates:
             - Path=/dttienda/**
-          filters:
-            - AuthFilter
+          
 
           #- id: ms-proveedores-service
           #uri: lb://ms-proveedores-service
