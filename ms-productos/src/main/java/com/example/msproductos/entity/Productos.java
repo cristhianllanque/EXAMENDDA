@@ -1,18 +1,13 @@
 package com.example.msproductos.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "Productos")
-public class Producto {
+public class Productos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -28,7 +23,4 @@ public class Producto {
     private String estadoProducto;
     private String categoriaTipo;
     private Date fechaIngreso;
-
-    public void setId(int i) {
-    }
 }

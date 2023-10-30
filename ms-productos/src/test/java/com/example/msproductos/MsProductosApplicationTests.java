@@ -8,7 +8,6 @@ class MsProductosApplicationTests {
 
 	@Test
 	void contextLoads() {
-
 	}
 
 }
