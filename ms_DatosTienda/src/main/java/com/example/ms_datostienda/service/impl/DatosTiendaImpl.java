@@ -1,4 +1,4 @@
-package com.example.ms_datostienda.service.DatosTiendaServiceImpl;
+package com.example.ms_datostienda.service.impl;
 
 
 import com.example.ms_datostienda.entity.DatosTienda;
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 
