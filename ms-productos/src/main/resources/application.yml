@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-producto-service
+    name: ms-productos-service
   profiles:
     active: development
   config:

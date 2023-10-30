@@ -25,8 +25,8 @@ spring:
         locator:
           enable: true
       routes:
-        - id: ms-producto-service
-          uri: lb://ms-producto-service
+        - id: ms-productos-service
+          uri: lb://ms-productos-service
           predicates:
             - Path=/producto/**
           filters:
