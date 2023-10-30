@@ -41,7 +41,7 @@ public class DatosTiendaController {
 
     }
 
-    private ResponseEntity<DatosTienda> fallBackProductoListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
+    private ResponseEntity<DatosTienda> fallBackDatosTiendaListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
         DatosTienda datosTienda = new DatosTienda();
         datosTienda.setId(90000);
         return ResponseEntity.ok().body(datosTienda);
