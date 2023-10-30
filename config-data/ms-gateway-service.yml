@@ -25,12 +25,6 @@ spring:
         locator:
           enable: true
       routes:
-        - id: ms-producto-service
-          uri: lb://ms-producto-service
-          predicates:
-            - Path=/producto/**
-          filters:
-            - AuthFilter
         - id: ms-venta-service
           uri: lb://ms-venta-service
           predicates:
@@ -40,6 +34,11 @@ spring:
           uri: lb://ms-opiniones-service
           predicates:
             - Path=/opiniones/**
+
+        - id: ms-producto-service
+          uri: lb://ms-producto-service
+          predicates:
+            - Path=/producto/**
 
         - id: ms-cliente-service
           uri: lb://ms-cliente-service
