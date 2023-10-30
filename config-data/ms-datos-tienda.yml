@@ -28,7 +28,7 @@ eureka:
 
 resilience4j.circuitbreaker:
   instances:
-    proveedorListarPorIdCB:
+    DatosTiendaListarPorIdCB:
       registerHealthIndicator: true
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
