@@ -1,10 +1,10 @@
-package com.example.ms_datostienda;
+package com.example.datostiendaservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsDatosTiendaApplicationTests {
+class DatosTiendaServiceApplicationTests {
 
     @Test
     void contextLoads() {

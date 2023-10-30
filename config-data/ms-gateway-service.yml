@@ -63,10 +63,7 @@ spring:
           predicates:
             - Path=/auth/**
 
-        - id: ms-datos-tienda
-          uri: lb://ms-datos-tienda
-          predicates:
-            - Path=/dttienda/**
+
           
 
           #- id: ms-proveedores-service
