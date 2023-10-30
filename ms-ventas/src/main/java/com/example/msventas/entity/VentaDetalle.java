@@ -10,19 +10,8 @@ public class VentaDetalle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Double cantidad;
-    private Double precioU;
-    private Double subtotal;
-    private Double total_factura;
-    private Integer productoId;
+    private double montoIGV; // El monto total del IGV en la venta.
+    private double porcentajeIGV; // El porcentaje de IGV aplicado a la venta (por ejemplo, 18%).
+    private String tipoIGV; // Puede ser "Gravado" o "Exonerado" para indicar si el producto está sujeto al IGV o no.
 
-    @Transient
-    private Producto producto;
-
-    public VentaDetalle(){
-        this.cantidad = (double) 0;
-        this.precioU = (double) 0;
-        this.subtotal = (double) 0;
-        this.total_factura = (double) 0;
-    }
 }

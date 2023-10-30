@@ -29,7 +29,8 @@ spring:
           uri: lb://ms-venta-service
           predicates:
             - Path=/venta/**
-
+          filters:
+            - AuthFilter
         - id: ms-opiniones-service
           uri: lb://ms-opiniones-service
           predicates:
@@ -44,12 +45,13 @@ spring:
           uri: lb://ms-cliente-service
           predicates:
             - Path=/cliente/**
+          filters:
+            - AuthFilter
         - id: ms-proveedores-service
           uri: lb://ms-proveedores-service
           predicates:
             - Path=/proveedores/**
-          filters:
-            - AuthFilter
+          
         - id: ms-compra-service
           uri: lb://ms-compra-service
           predicates:
