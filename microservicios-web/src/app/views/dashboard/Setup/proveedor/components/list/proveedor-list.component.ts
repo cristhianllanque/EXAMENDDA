@@ -1,10 +1,10 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {abcForms} from 'src/environments/generals';
-import {Client} from "../../models/client";
+import { Proveedor } from '../../models/proveedor';
 
 
 @Component({
-  selector: 'app-client-list',
+  selector: 'app-proveedor-list',
   template: `
       <div class="float-end">
           <button type="button" (click)="goNew()" class="btn-gm-danger">
@@ -17,17 +17,17 @@ import {Client} from "../../models/client";
               <tr>
                   <th scope="col">#</th>
                   <th scope="col">Nombre</th>
-                  <th scope="col">DNI</th>
+    
                   <th scope="col">Dirección</th>
                   <th scope="col">Telefono</th>
                   <th scope="col">Acciones</th>
               </tr>
               </thead>
               <tbody class="table-group-divider">
-              <tr *ngFor="let v of clients ; let i=index">
+              <tr *ngFor="let v of proveedors ; let i=index">
                   <th scope="row">{{i + 1}}</th>
                   <td data-title="Nombre">{{v.nombre}}</td>
-                  <td data-title="DNI">{{v.dni}}</td>
+            
                   <td data-title="Dirección">{{v.direccion}}</td>
                   <td data-title="Telefono">{{v.telefono}}</td>
 
@@ -48,9 +48,9 @@ import {Client} from "../../models/client";
   `,
 })
 
-export class ClientListComponent implements OnInit {
+export class ProveedortListComponent implements OnInit {
   abcForms: any;
-  @Input() clients: Client[] = [];
+  @Input() proveedors: Proveedor[] = [];
   @Output() eventNew = new EventEmitter<boolean>();
   @Output() eventEdit = new EventEmitter<number>();
   @Output() eventDelete = new EventEmitter<number>();

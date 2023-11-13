@@ -1,37 +1,37 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-import {ClientComponent} from './client.component';
-import {ClientContainersComponent} from "./container/client-containers.component";
-import {ClientNewComponent} from "./components/forms/client-new.component";
-import {ClientEditComponent} from "./components/forms/client-edit.component";
+import {ProveedorComponent } from './proveedor.component';
+import {ProveedorContainersComponent} from "./container/proveedor-containers.component";
+import {ProveedorNewComponent} from "./components/forms/proveedor-new.component";
+import {ProveedorEditComponent} from "./components/forms/proveedor-edit.component";
 
 
 const routes: Routes = [
   {
     path: '',
-    component: ClientComponent,
+    component: ProveedorComponent,
     children: [
       {
         path: '',
-        component: ClientContainersComponent,
+        component: ProveedorContainersComponent,
         data: {
-          title: 'Cliente'
+          title: 'Proveedor'
         }
       },
       {
         path: 'new',
-        component: ClientNewComponent,
+        component: ProveedorNewComponent,
         data: {
-          title: 'Cliente'
+          title: 'Proveedor'
         }
       }
       ,
       {
         path: 'edit',
-        component: ClientEditComponent,
+        component: ProveedorEditComponent,
         data: {
-          title: 'Cliente'
+          title: 'Proveedor'
         }
       },
 
@@ -43,10 +43,10 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ClientRoutingModule {
+export class ProveedorRoutingModule {
 }
 
 export const rutedComponents = [
-  ClientContainersComponent,
-  ClientComponent,
+  ProveedorContainersComponent,
+  ProveedorComponent,
 ];

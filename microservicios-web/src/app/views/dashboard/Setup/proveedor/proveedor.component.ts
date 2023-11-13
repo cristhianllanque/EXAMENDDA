@@ -10,7 +10,7 @@ import {abcForms} from "../../../../../environments/generals";
     </div>
   `,
 })
-export class ClientComponent implements OnInit {
+export class ProveedorComponent implements OnInit {
 
   public title: string = '';
   abcForm: any;
@@ -19,7 +19,7 @@ export class ClientComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.title = 'Clientes';
+    this.title = 'Proveedores';
     this.abcForm = abcForms;
   }
 

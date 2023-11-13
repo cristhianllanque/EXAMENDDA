@@ -2,14 +2,15 @@ import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
-import {ClientRoutingModule, rutedComponents} from './proveedor-routing.module';
+import {ProveedorRoutingModule, rutedComponents} from './proveedor-routing.module';
 
 import {ConfirmDialogModule, FormsComponentValidModule, PaginationModule} from '../../../../shared';
 import {ButtonModule, CardModule, GridModule} from '@coreui/angular';
-import {ClientListComponent} from "./components/list/client-list.component";
-import {ClientsService} from "../../../../providers/services/setup/clients.service";
-import {ClientNewComponent} from "./components/forms/client-new.component";
-import {ClientEditComponent} from "./components/forms/client-edit.component";
+import { ProveedortListComponent } from './components/list/proveedor-list.component'; 
+import { ProveedorsService } from '../../../../providers/services/setup/proveedors.service'; 
+import { ProveedorNewComponent } from './components/forms/proveedor-new.component'; 
+import { ProveedorEditComponent } from './components/forms/proveedor-edit.component'; 
+
 
 const SHARED_MODULES: any[] = [
   ConfirmDialogModule,
@@ -17,9 +18,9 @@ const SHARED_MODULES: any[] = [
   PaginationModule,
 ];
 
-const COMPONENTS: any[] = [ClientListComponent, ClientNewComponent, ClientEditComponent];
+const COMPONENTS: any[] = [ProveedortListComponent, ProveedorNewComponent, ProveedorEditComponent];
 
-const SERVICES: any[] = [ClientsService];
+const SERVICES: any[] = [ProveedorsService];
 
 const NG_MODULES: any = [];
 
@@ -34,7 +35,7 @@ const PIPES: any = [];
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ClientRoutingModule,
+    ProveedorRoutingModule,
     CardModule,
     ButtonModule,
     GridModule,
@@ -53,5 +54,5 @@ const PIPES: any = [];
   ],
   exports: []
 })
-export class ClientModule {
+export class ProveedorModule {
 }

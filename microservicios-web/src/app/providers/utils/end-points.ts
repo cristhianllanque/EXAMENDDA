@@ -11,6 +11,7 @@ export const END_POINTS = {
   setup: {
     period: 'periodo',
     client: 'cliente',
+    proveedor: 'proveedor',
     person: 'persona',
     institution: 'institucion',
     subsidiary: 'filial',
