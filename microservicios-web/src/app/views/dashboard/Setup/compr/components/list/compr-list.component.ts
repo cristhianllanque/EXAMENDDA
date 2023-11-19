@@ -9,7 +9,7 @@ import {PdfService} from "../../../../../../shared/files";
   selector: 'app-compr-list',
   template: `
     <div class="float-end">
-      <div> cam</div>
+      <div> a</div>
       <button type="button" (click)="generatePDF()" class="btn btn-gm-danger">
         <span class="{{ abcForms.btnNew.icon }} lamb-icon"></span> Generar PDF
       </button>
