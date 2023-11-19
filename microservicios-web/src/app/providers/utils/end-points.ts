@@ -13,12 +13,13 @@ export const END_POINTS = {
     client: 'cliente',
     proveedor: 'proveedores',
     product: 'productos',
+    compr: 'compra',
 
 
   },
   sale: {
-    venta: 'ventas',
-    compra: 'compra',
+    comprass: 'compraas',
+
   },
   attendance: {
     attendance: 'asistencia',
