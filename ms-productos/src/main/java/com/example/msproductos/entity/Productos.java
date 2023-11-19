@@ -5,6 +5,8 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Data
 public class Productos {
@@ -22,5 +24,7 @@ public class Productos {
     private String especificacionesTecnicas;
     private String estadoProducto;
     private String categoriaTipo;
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date fechaIngreso;
 }

@@ -8,6 +8,7 @@ public class Proveedores {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private Integer ruc;
     private String nombre;
     private String direccion;
     private String telefono;

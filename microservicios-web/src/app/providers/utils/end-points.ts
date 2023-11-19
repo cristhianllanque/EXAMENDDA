@@ -11,16 +11,14 @@ export const END_POINTS = {
   setup: {
     period: 'periodo',
     client: 'cliente',
-    person: 'persona',
-    institution: 'institucion',
-    subsidiary: 'filial',
-    faculty: 'facultad',
-    prefessionalSchool: 'escuela-profesional',
-    cycle: 'ciclo',
-    group: 'grupo',
+    proveedor: 'proveedores',
+    product: 'productos',
+
+
   },
-  event: {
-    event: 'evento',
+  sale: {
+    venta: 'ventas',
+    compra: 'compra',
   },
   attendance: {
     attendance: 'asistencia',
