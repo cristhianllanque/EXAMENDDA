@@ -13,7 +13,7 @@ import {PdfService} from "../../../../../../shared/files";
   template: `
     <div class="float-end">
       <button type="button" (click)="generatePDF()" class="btn btn-gm-danger">
-        <span class="{{ abcForms.btnNew.icon }} lamb-icon"></span> Generar PDF
+        <span class="{{ abcForms.btnFile.icon }} lamb-icon"></span> Generar PDF
       </button>
       <button type="button" (click)="goNew()" class="btn-gm-danger">
         <span class="{{ abcForms.btnNew.icon }} lamb-icon"></span> {{ abcForms.btnNew.label }} Compra
@@ -28,7 +28,7 @@ import {PdfService} from "../../../../../../shared/files";
           <th scope="col">Categoría</th>
           <th scope="col">Fecha</th>
           <th scope="col">Precio Total</th>
-          <th scope="col">Proveedor ID</th>
+          <th scope="col">Proveedor</th>
           <th scope="col">Serie</th>
           <th scope="col">Factura</th>
           <th scope="col">Acciones</th>
@@ -40,8 +40,8 @@ import {PdfService} from "../../../../../../shared/files";
           <td data-title="Marca">{{ v.marca }}</td>
           <td data-title="Categoría">{{ v.categoria }}</td>
           <td data-title="Fecha">{{ v.fecha }}</td>
-          <td data-title="Precio Total">{{ v.proveedor?.nombre }}</td>
-          <td data-title="Proveedor ID">{{ v.proveedorId}}</td>
+          <td data-title="Precio Total">{{ v.precio_Total }}</td>
+          <td data-title="Proveedor ID">{{ v.proveedor?.nombre}}</td>
           <td data-title="Serie">{{ v.serie }}</td>
           <td data-title="Factura">{{ v.factura }}</td>
           <td data-title="Acciones">
@@ -59,22 +59,20 @@ import {PdfService} from "../../../../../../shared/files";
       </table>
     </div>
 
-    <div class="float-end">
+    <div class="responsive-table">
       <form [formGroup]="comprAddForm" class="row mt-2 d-flex justify-content-start align-items-center">
-        <div class="form-group col-md-2 required">
-          <div class="input-group input-group-sm">
-            <label class="col-form-label"><b>Id </b></label>
-          </div>
+        <div class="form-group col-md-4 required">
+          <label for="id" class="col-form-label"><b>Digite el ID</b></label>
           <div class="input-group input-group-sm input-group-rounded">
-            <input type="number" class="form-control form-control-sm" formControlName="id" id="id"
-                   placeholder="digite id">
+            <input type="number" class="form-control form-control-sm" formControlName="id" id="id" placeholder="Digite ID" style="font-size: 16px;">
           </div>
           <app-form-validate-errors [group]="comprAddForm" [controlName]="'id'"></app-form-validate-errors>
         </div>
-
       </form>
-      <button type="button" class="btn {{ abcForms.btnCancel.class }} btn-sm" (click)="addItem()">
-        <span class="{{ abcForms.btnCancel.icon }} lamb-icon"></span> {{ abcForms.btnCancel.label }}
+
+
+      <button type="button" class="btn {{ abcForms.btnConfirm.class }} btn-sm" (click)="addItem()">
+        <span class="{{ abcForms.btnConfirm.icon }} lamb-icon"></span> {{ abcForms.btnConfirm.label }}
       </button>
     </div>
     <div class="center">Detalle</div>
@@ -97,16 +95,7 @@ import {PdfService} from "../../../../../../shared/files";
           <td data-title="precio_u">{{ v.precio_u }}</td>
           <td data-title="precio_t">{{ v.precio_t }}</td>
 
-          <td data-title="Acciones">
-            <button type="button" class="btn-gm-sm btn btn-warning btn-gm-small"
-                    title="{{ abcForms.btnEdit.label }}" (click)="goEdit(v.id!)">
-              <span class="{{ abcForms.btnEdit.icon }}"></span>
-            </button>
-            <button type="button" class="btn-gm-sm btn btn-danger text-white btn-gm-small"
-                    title="{{ abcForms.btnDelete.label }}" (click)="goDelete(v.id!)">
-              <span class="{{ abcForms.btnDelete.icon }}"></span>
-            </button>
-          </td>
+
         </tr>
         </tbody>
       </table>
@@ -149,7 +138,7 @@ export class ComprListComponent implements OnInit {
   }
 
   generatePDF() {
-    const pdfTitle = 'Lista de Compras';
+    const pdfTitle = 'FACTURA DE COMPRA';
     const pdfContent = this.comprs.map((compr, index) => `${index + 1}. Marca: ${compr.marca}, Categoría: ${compr.categoria}, Fecha: ${compr.fecha}, Precio Total: 100`).join('\n');
 
     // Llamada al servicio para generar el PDF

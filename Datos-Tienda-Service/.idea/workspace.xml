@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82192cd3-8c71-4030-b60a-d8c7b70511a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/components/list/compr-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/components/list/compr-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/entity/Compras.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/entity/Compras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/service/impl/CompraServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/service/impl/CompraServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/models/compr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/models/compr.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

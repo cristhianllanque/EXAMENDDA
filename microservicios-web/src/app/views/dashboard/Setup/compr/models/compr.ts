@@ -6,7 +6,7 @@ export class Compr {
   categoria?: string;
   fecha?: null;
   proveedor?: Proveedor;
-  proveedorId?: number;
+  precio_Total?: number;
   serie?: number;
   factura?: string;
 
