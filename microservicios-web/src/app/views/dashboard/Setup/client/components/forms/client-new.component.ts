@@ -17,10 +17,11 @@ import {ActivatedRoute, Router} from "@angular/router";
         </li>
       </ul>
       <form [formGroup]="clientForm" class="row mt-2 d-flex justify-content-start align-items-center ">
-        <div class="form-group col-md-2 required">
+        --
+          <div class="form-group col-md-2 required">
           <div class="input-group input-group-sm">
             <label class="col-form-label"><b>Nombre. </b></label>
-          </div>
+          </div> 
           <div class="input-group input-group-sm input-group-rounded">
             <input type="text" class="form-control form-control-sm" formControlName="nombre"
                    id="nombre"
@@ -30,14 +31,15 @@ import {ActivatedRoute, Router} from "@angular/router";
                                     [controlName]="'nombre'"></app-form-validate-errors>
         </div>
 
+
         <div class="form-group col-md-2 required">
           <div class="input-group input-group-sm">
             <label class="col-form-label"><b>DNI. </b></label>
           </div>
           <div class="input-group input-group-sm input-group-rounded">
-            <input type="text" class="form-control form-control-sm" formControlName="dni"
-                   id="dni"
-                   placeholder="DNI del cliente">
+            <input type="text" class="form-control form-control-sm" formControlName="numeroTelefono"
+                   id="numeroTelefono"
+                   placeholder="Numero Celular">
           </div>
           <app-form-validate-errors [group]="clientForm"
                                     [controlName]="'dni'"></app-form-validate-errors>
