@@ -6,25 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="82192cd3-8c71-4030-b60a-d8c7b70511a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-new.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-new.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/DatosTiendaServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/controller/DatosTiendaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/entity/DatosTienda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/repository/DatosTiendaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/service/DatosTiendaImpl/DatosTiendaServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/service/DatosTiendaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/test/java/com/example/datostiendaservice/DatosTiendaServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/components/list/compr-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/components/list/compr-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/entity/Compras.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/entity/Compras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/service/impl/CompraServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-compras/src/main/java/com/example/mscompras/service/impl/CompraServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/leon/Documentos/AplicacionesDistribuidas/ProyectoIntegrador/EXAMENDDA/Datos-Tienda-Service",
+    "last_opened_file_path": "D:/DAD-2023-4/EXAMENDDA/Datos-Tienda-Service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +79,7 @@
       <workItem from="1700446480220" duration="14000" />
       <workItem from="1700451987421" duration="168000" />
       <workItem from="1700452519360" duration="12000" />
+      <workItem from="1700487178328" duration="678000" />
     </task>
     <servers />
   </component>

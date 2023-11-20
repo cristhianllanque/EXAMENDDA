@@ -8,6 +8,7 @@ import com.example.mscompras.service.CompraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,7 +22,18 @@ public class CompraServiceImpl implements CompraService {
 
     @Override
     public List<Compras> listar() {
-        return compraRepository.findAll();
+
+        List<Compras> compras = compraRepository.findAll();
+        List<Compras> comprasList = new ArrayList<>();
+
+        compras.forEach(compra -> {
+
+            Proveedor proveedor = proveedorFeign.listById(compra.getProveedorId()).getBody();
+            compra.setProveedor(proveedor);
+            comprasList.add(compra);
+        });
+
+        return comprasList;
     }
 
     @Override
@@ -35,7 +47,7 @@ public class CompraServiceImpl implements CompraService {
     }
 
     @Override
-public Optional<Compras> listarPorId(Integer id) {
+    public Optional<Compras> listarPorId(Integer id) {
         Compras compras = compraRepository.findById(id).get();
         Proveedor proveedor = proveedorFeign.listById(compras.getProveedorId()).getBody();
         compras.setProveedor(proveedor);
