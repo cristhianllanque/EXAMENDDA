@@ -5,24 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82192cd3-8c71-4030-b60a-d8c7b70511a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/datostiendaservice/DatosTiendaServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/datostiendaservice/controller/DatosTiendaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/datostiendaservice/entity/DatosTienda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/datostiendaservice/repository/DatosTiendaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/datostiendaservice/service/DatosTiendaImpl/DatosTiendaServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/datostiendaservice/service/DatosTiendaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/datostiendaservice/DatosTiendaServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-edit.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-new.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/components/forms/venta-new.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/venta/venta.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/DatosTiendaServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/controller/DatosTiendaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/entity/DatosTienda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/repository/DatosTiendaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/service/DatosTiendaImpl/DatosTiendaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/java/com/example/datostiendaservice/service/DatosTiendaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-dstientda/src/test/java/com/example/datostiendaservice/DatosTiendaServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +49,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/leon/Documentos/AplicacionesDistribuidas/ProyectoIntegrador/EXAMENDDA/Datos-Tienda-Service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/leon/Documentos/AplicacionesDistribuidas/ProyectoIntegrador/EXAMENDDA/Datos-Tienda-Service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ms-dstientda" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ms-dstientda" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,7 +93,8 @@
       <workItem from="1699887677849" duration="655000" />
       <workItem from="1699889408378" duration="113000" />
       <workItem from="1700446480220" duration="14000" />
-      <workItem from="1700447005215" duration="767000" />
+      <workItem from="1700451987421" duration="168000" />
+      <workItem from="1700452519360" duration="12000" />
     </task>
     <servers />
   </component>

@@ -6,10 +6,10 @@ import {ClientRoutingModule, rutedComponents} from './client-routing.module';
 
 import {ConfirmDialogModule, FormsComponentValidModule, PaginationModule} from '../../../../shared';
 import {ButtonModule, CardModule, GridModule} from '@coreui/angular';
-import {ClientListComponent} from "./components/list/client-list.component";
+import {DstiendaListComponent} from "./components/list/dstienda-list.component";
 import {ClientsService} from "../../../../providers/services/setup/clients.service";
-import {ClientNewComponent} from "./components/forms/client-new.component";
-import {ClientEditComponent} from "./components/forms/client-edit.component";
+import {DstiendaNewComponent} from "./components/forms/dstienda-new.component";
+import {DstiendaEditComponent} from "./components/forms/dstienda-edit.component";
 
 const SHARED_MODULES: any[] = [
   ConfirmDialogModule,
@@ -17,7 +17,7 @@ const SHARED_MODULES: any[] = [
   PaginationModule,
 ];
 
-const COMPONENTS: any[] = [ClientListComponent, ClientNewComponent, ClientEditComponent];
+const COMPONENTS: any[] = [DstiendaListComponent, DstiendaNewComponent, DstiendaEditComponent];
 
 const SERVICES: any[] = [ClientsService];
 

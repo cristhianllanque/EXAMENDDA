@@ -2,9 +2,9 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 import {ClientComponent} from './client.component';
-import {ClientContainersComponent} from "./container/client-containers.component";
-import {ClientNewComponent} from "./components/forms/client-new.component";
-import {ClientEditComponent} from "./components/forms/client-edit.component";
+import {DstiendaContainersComponent} from "./container/dstienda-containers.component";
+import {DstiendaNewComponent} from "./components/forms/dstienda-new.component";
+import {DstiendaEditComponent} from "./components/forms/dstienda-edit.component";
 
 
 const routes: Routes = [
@@ -14,14 +14,14 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: ClientContainersComponent,
+        component: DstiendaContainersComponent,
         data: {
           title: 'Cliente'
         }
       },
       {
         path: 'new',
-        component: ClientNewComponent,
+        component: DstiendaNewComponent,
         data: {
           title: 'Cliente'
         }
@@ -29,7 +29,7 @@ const routes: Routes = [
       ,
       {
         path: 'edit',
-        component: ClientEditComponent,
+        component: DstiendaEditComponent,
         data: {
           title: 'Cliente'
         }
@@ -47,6 +47,6 @@ export class ClientRoutingModule {
 }
 
 export const rutedComponents = [
-  ClientContainersComponent,
+  DstiendaContainersComponent,
   ClientComponent,
 ];

@@ -7,9 +7,9 @@ import {VentaRoutingModule, rutedComponents} from './venta-routing.module';
 import {ConfirmDialogModule, FormsComponentValidModule, PaginationModule} from '../../../../shared';
 import {ButtonModule, CardModule, GridModule} from '@coreui/angular';
 import {VentaListComponent} from "./components/list/venta-list.component";
-import {ClientsService} from "../../../../providers/services/setup/clients.service";
-import {ClientNewComponent} from "./components/forms/client-new.component";
-import {ClientEditComponent} from "./components/forms/client-edit.component";
+import {VentasService} from "../../../../providers/services/setup/ventas.service";
+import {VentaNewComponent} from "./components/forms/venta-new.component";
+import {VentaEditComponent} from "./components/forms/venta-edit.component";
 
 const SHARED_MODULES: any[] = [
   ConfirmDialogModule,
@@ -17,9 +17,9 @@ const SHARED_MODULES: any[] = [
   PaginationModule,
 ];
 
-const COMPONENTS: any[] = [VentaListComponent, ClientNewComponent, ClientEditComponent];
+const COMPONENTS: any[] = [VentaListComponent, VentaNewComponent, VentaEditComponent];
 
-const SERVICES: any[] = [ClientsService];
+const SERVICES: any[] = [VentasService];
 
 const NG_MODULES: any = [];
 

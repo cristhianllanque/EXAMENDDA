@@ -89,7 +89,7 @@ import {ActivatedRoute, Router} from "@angular/router";
     </div>
   `
 })
-export class ClientNewComponent implements OnInit {
+export class VentaNewComponent implements OnInit {
   abcForms: any;
   clientForm = new FormGroup({
     nombre: new FormControl('', [Validators.required]),

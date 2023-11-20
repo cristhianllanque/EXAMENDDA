@@ -14,6 +14,8 @@ export const END_POINTS = {
     proveedor: 'proveedores',
     product: 'productos',
     compr: 'compra',
+    venta: 'ventas',
+    dstienda: 'dstienda',
 
 
   },

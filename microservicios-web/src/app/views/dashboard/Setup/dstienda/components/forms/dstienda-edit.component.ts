@@ -3,7 +3,7 @@ import {abcForms} from 'src/environments/generals';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ClientsService} from "../../../../../../providers/services/setup/clients.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {Client} from "../../models/client";
+import {Client} from "../../models/dstienda";
 
 @Component({
   selector: 'app-client-edit',
@@ -88,7 +88,7 @@ import {Client} from "../../models/client";
     </div>
   `
 })
-export class ClientEditComponent implements OnInit {
+export class DstiendaEditComponent implements OnInit {
   abcForms: any;
   public idClient: number = 0;
   public client = new Client();

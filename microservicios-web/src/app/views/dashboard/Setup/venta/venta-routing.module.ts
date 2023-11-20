@@ -3,8 +3,8 @@ import {RouterModule, Routes} from '@angular/router';
 
 import {VentaComponent} from './venta.component';
 import {VentaContainersComponent} from "./container/venta-containers.component";
-import {ClientNewComponent} from "./components/forms/client-new.component";
-import {ClientEditComponent} from "./components/forms/client-edit.component";
+import {VentaNewComponent} from "./components/forms/venta-new.component";
+import {VentaEditComponent} from "./components/forms/venta-edit.component";
 
 
 const routes: Routes = [
@@ -16,22 +16,22 @@ const routes: Routes = [
         path: '',
         component: VentaContainersComponent,
         data: {
-          title: 'Cliente'
+          title: 'Venta'
         }
       },
       {
         path: 'new',
-        component: ClientNewComponent,
+        component: VentaNewComponent,
         data: {
-          title: 'Cliente'
+          title: 'Venta'
         }
       }
       ,
       {
         path: 'edit',
-        component: ClientEditComponent,
+        component: VentaEditComponent,
         data: {
-          title: 'Cliente'
+          title: 'Venta'
         }
       },
 

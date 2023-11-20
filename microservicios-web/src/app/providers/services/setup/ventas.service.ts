@@ -5,6 +5,6 @@ import {END_POINTS, EntityDataService} from '../../utils';
 @Injectable({providedIn: 'root'})
 export class VentasService extends EntityDataService<any> {
   constructor(protected override httpClient: HttpClient) {
-    super(httpClient, END_POINTS.setup.client);
+    super(httpClient, END_POINTS.setup.venta);
   }
 }

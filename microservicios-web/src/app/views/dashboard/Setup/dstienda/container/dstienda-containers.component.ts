@@ -1,36 +1,36 @@
 import {Component, OnInit} from '@angular/core';
-import {Client} from "../models/client";
-import {ClientsService} from "../../../../../providers/services/setup/clients.service";
+import {Dstienda} from "../models/dstienda";
+import {DstiendasService} from "../../../../../providers/services/setup/dstiendas.service";
 import {ActivatedRoute, Router} from "@angular/router";
 
 
 @Component({
   selector: 'app-attendance-container',
   template: `
-    <app-client-list [clients]="clients"
+    <app-dstienda-list [dstiendas]="dstiendas"
                      (eventNew)="eventNew($event)"
                      (eventEdit)="eventEdit($event)"
                      (eventDelete)="eventDelete($event)"
 
-    ></app-client-list>
+    ></app-dstienda-list>
   `
 })
 
-export class ClientContainersComponent implements OnInit {
-  public clients: Client[] = [];
+export class DstiendaContainersComponent implements OnInit {
+  public dstiendas: Dstienda[] = [];
 
-  constructor(private clientsService: ClientsService, private router: Router,
+  constructor(private dstiendasService: DstiendasService, private router: Router,
               private route: ActivatedRoute) {
   }
 
   ngOnInit() {
 
-    this.getClients();
+    this.getDstiendas();
   }
 
-  public getClients(): void {
-    this.clientsService.getAll$().subscribe(response => {
-      this.clients = response;
+  public getDstiendas(): void {
+    this.dstiendasService.getAll$().subscribe(response => {
+      this.dstiendas = response;
     });
   }
 
@@ -42,15 +42,15 @@ export class ClientContainersComponent implements OnInit {
 
   }
 
-  public eventEdit(idClient: number) {
-    this.router.navigate(['edit', {idClient: idClient}], {relativeTo: this.route});
+  public eventEdit(idDstienda: number) {
+    this.router.navigate(['edit', {idDstienda: idDstienda}], {relativeTo: this.route});
   }
 
-  public eventDelete(idClient: number): void {
+  public eventDelete(idDstienda: number): void {
 
-    this.clientsService.delete$(idClient).subscribe(response => {
+    this.dstiendasService.delete$(idDstienda).subscribe(response => {
       if (response) {
-        this.getClients()
+        this.getDstiendas()
       }
     });
   }

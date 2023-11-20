@@ -88,7 +88,7 @@ import {Venta} from "../../models/venta";
     </div>
   `
 })
-export class ClientEditComponent implements OnInit {
+export class VentaEditComponent implements OnInit {
   abcForms: any;
   public idClient: number = 0;
   public client = new Venta();
