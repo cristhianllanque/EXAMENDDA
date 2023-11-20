@@ -5,7 +5,7 @@ import {ClientsService} from "../../../../../../providers/services/setup/clients
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-client-new',
+  selector: 'app-venta-new',
   template: `
     <button type="button" class="close btn-gm-return mb-2" aria-label="Close" (click)="cancelForm()">
       <span class="{{ abcForms.btnReturn.icon }}"></span> Regresar
@@ -21,7 +21,7 @@ import {ActivatedRoute, Router} from "@angular/router";
           <div class="form-group col-md-2 required">
           <div class="input-group input-group-sm">
             <label class="col-form-label"><b>Nombre. </b></label>
-          </div> 
+          </div>
           <div class="input-group input-group-sm input-group-rounded">
             <input type="text" class="form-control form-control-sm" formControlName="nombre"
                    id="nombre"

@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 import {VentaComponent} from './venta.component';
-import {ClientContainersComponent} from "./container/client-containers.component";
+import {VentaContainersComponent} from "./container/venta-containers.component";
 import {ClientNewComponent} from "./components/forms/client-new.component";
 import {ClientEditComponent} from "./components/forms/client-edit.component";
 
@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: ClientContainersComponent,
+        component: VentaContainersComponent,
         data: {
           title: 'Cliente'
         }
@@ -47,6 +47,6 @@ export class VentaRoutingModule {
 }
 
 export const rutedComponents = [
-  ClientContainersComponent,
+  VentaContainersComponent,
   VentaComponent,
 ];
