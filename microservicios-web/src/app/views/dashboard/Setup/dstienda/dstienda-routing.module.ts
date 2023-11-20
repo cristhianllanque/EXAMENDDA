@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-import {ClientComponent} from './client.component';
+import {DstiendaComponent} from './dstienda.component';
 import {DstiendaContainersComponent} from "./container/dstienda-containers.component";
 import {DstiendaNewComponent} from "./components/forms/dstienda-new.component";
 import {DstiendaEditComponent} from "./components/forms/dstienda-edit.component";
@@ -10,7 +10,7 @@ import {DstiendaEditComponent} from "./components/forms/dstienda-edit.component"
 const routes: Routes = [
   {
     path: '',
-    component: ClientComponent,
+    component: DstiendaComponent,
     children: [
       {
         path: '',
@@ -43,10 +43,10 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ClientRoutingModule {
+export class DstiendaRoutingModule {
 }
 
 export const rutedComponents = [
   DstiendaContainersComponent,
-  ClientComponent,
+  DstiendaComponent,
 ];

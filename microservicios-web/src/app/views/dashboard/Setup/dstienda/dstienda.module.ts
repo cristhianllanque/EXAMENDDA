@@ -2,14 +2,14 @@ import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
-import {ClientRoutingModule, rutedComponents} from './client-routing.module';
+import {DstiendaRoutingModule, rutedComponents} from './dstienda-routing.module';
 
 import {ConfirmDialogModule, FormsComponentValidModule, PaginationModule} from '../../../../shared';
 import {ButtonModule, CardModule, GridModule} from '@coreui/angular';
 import {DstiendaListComponent} from "./components/list/dstienda-list.component";
-import {ClientsService} from "../../../../providers/services/setup/clients.service";
 import {DstiendaNewComponent} from "./components/forms/dstienda-new.component";
 import {DstiendaEditComponent} from "./components/forms/dstienda-edit.component";
+import {DstiendasService} from "../../../../providers/services/setup/dstiendas.service";
 
 const SHARED_MODULES: any[] = [
   ConfirmDialogModule,
@@ -19,7 +19,7 @@ const SHARED_MODULES: any[] = [
 
 const COMPONENTS: any[] = [DstiendaListComponent, DstiendaNewComponent, DstiendaEditComponent];
 
-const SERVICES: any[] = [ClientsService];
+const SERVICES: any[] = [DstiendasService];
 
 const NG_MODULES: any = [];
 
@@ -34,7 +34,7 @@ const PIPES: any = [];
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ClientRoutingModule,
+    DstiendaRoutingModule,
     CardModule,
     ButtonModule,
     GridModule,
@@ -53,5 +53,5 @@ const PIPES: any = [];
   ],
   exports: []
 })
-export class ClientModule {
+export class DstiendaModule {
 }
