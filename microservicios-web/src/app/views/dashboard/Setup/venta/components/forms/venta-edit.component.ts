@@ -3,9 +3,10 @@ import {abcForms} from 'src/environments/generals';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ClientsService} from "../../../../../../providers/services/setup/clients.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {Venta} from "../../models/venta";
 
 @Component({
-  selector: 'app-client-new',
+  selector: 'app-client-edit',
   template: `
     <button type="button" class="close btn-gm-return mb-2" aria-label="Close" (click)="cancelForm()">
       <span class="{{ abcForms.btnReturn.icon }}"></span> Regresar
@@ -17,11 +18,10 @@ import {ActivatedRoute, Router} from "@angular/router";
         </li>
       </ul>
       <form [formGroup]="clientForm" class="row mt-2 d-flex justify-content-start align-items-center ">
-        --
-          <div class="form-group col-md-2 required">
+        <div class="form-group col-md-2 required">
           <div class="input-group input-group-sm">
             <label class="col-form-label"><b>Nombre. </b></label>
-          </div> 
+          </div>
           <div class="input-group input-group-sm input-group-rounded">
             <input type="text" class="form-control form-control-sm" formControlName="nombre"
                    id="nombre"
@@ -31,15 +31,14 @@ import {ActivatedRoute, Router} from "@angular/router";
                                     [controlName]="'nombre'"></app-form-validate-errors>
         </div>
 
-
         <div class="form-group col-md-2 required">
           <div class="input-group input-group-sm">
             <label class="col-form-label"><b>DNI. </b></label>
           </div>
           <div class="input-group input-group-sm input-group-rounded">
-            <input type="text" class="form-control form-control-sm" formControlName="numeroTelefono"
-                   id="numeroTelefono"
-                   placeholder="Numero Celular">
+            <input type="text" class="form-control form-control-sm" formControlName="dni"
+                   id="dni"
+                   placeholder="DNI del cliente">
           </div>
           <app-form-validate-errors [group]="clientForm"
                                     [controlName]="'dni'"></app-form-validate-errors>
@@ -89,9 +88,12 @@ import {ActivatedRoute, Router} from "@angular/router";
     </div>
   `
 })
-export class ClientNewComponent implements OnInit {
+export class VentaEditComponent implements OnInit {
   abcForms: any;
+  public idClient: number = 0;
+  public client = new Venta();
   clientForm = new FormGroup({
+    id: new FormControl(0, [Validators.required]),
     nombre: new FormControl('', [Validators.required]),
     dni: new FormControl('', [Validators.required]),
     direccion: new FormControl('', [Validators.required]),
@@ -109,8 +111,20 @@ export class ClientNewComponent implements OnInit {
 
   ngOnInit() {
     this.abcForms = abcForms;
-
+    this.route.params.subscribe(res => {
+      this.idClient = parseInt(res['idClient']);
+      this.clientForm.value.id = this.idClient;
+      this.getClientById(this.idClient);
+    });
     console.log("app-client-new");
+  }
+
+  getClientById(idClient: number): void {
+    this.clientsService.getById$(idClient).subscribe(response => {
+      this.client = response;
+      // @ts-ignore
+      this.clientForm.patchValue(this.client);
+    });
   }
 
   cancelForm() {
@@ -118,7 +132,6 @@ export class ClientNewComponent implements OnInit {
   }
 
   saveForm() {
-    console.log(this.clientForm.value);
     if (this.clientForm.valid) {
       this.clientsService.add$(this.clientForm.value).subscribe(response => {
         console.log(response);
@@ -127,7 +140,5 @@ export class ClientNewComponent implements OnInit {
         }
       });
     }
-
-
   }
 }

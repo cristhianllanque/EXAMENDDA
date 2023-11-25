@@ -26,6 +26,7 @@ public class Compras {
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "compra_id")
     private List<ComprasDetalle> comprasDetalles;
+
     @Transient
     private Proveedor proveedor;
     @GeneratedValue(strategy = GenerationType.AUTO)

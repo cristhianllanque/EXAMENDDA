@@ -21,7 +21,7 @@ import {ActivatedRoute, Router} from "@angular/router";
           <div class="form-group col-md-2 required">
           <div class="input-group input-group-sm">
             <label class="col-form-label"><b>Nombre. </b></label>
-          </div> 
+          </div>
           <div class="input-group input-group-sm input-group-rounded">
             <input type="text" class="form-control form-control-sm" formControlName="nombre"
                    id="nombre"
@@ -89,7 +89,7 @@ import {ActivatedRoute, Router} from "@angular/router";
     </div>
   `
 })
-export class ClientNewComponent implements OnInit {
+export class DstiendaNewComponent implements OnInit {
   abcForms: any;
   clientForm = new FormGroup({
     nombre: new FormControl('', [Validators.required]),
