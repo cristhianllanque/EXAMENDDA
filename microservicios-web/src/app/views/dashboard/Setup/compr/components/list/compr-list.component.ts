@@ -153,7 +153,7 @@ export class ComprListComponent implements OnInit {
       this.product = response;
       // @ts-ignore
       this.comprdetalles.push({
-        cantidad: 1,
+        cantidad: this.product.stockDisponible,
         precio_u: this.product.precio,
         precio_t: this.product.precio! * 1,
       })
