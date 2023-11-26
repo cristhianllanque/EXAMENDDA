@@ -25,7 +25,7 @@ import {ActivatedRoute, Router} from "@angular/router";
           <div class="input-group input-group-sm input-group-rounded">
             <input type="text" class="form-control form-control-sm" formControlName="nombre"
                    id="nombre"
-                   placeholder="Nombre del cliente">
+                   placeholder="Nombre del Articulo">
           </div>
           <app-form-validate-errors [group]="clientForm"
                                     [controlName]="'nombre'"></app-form-validate-errors>

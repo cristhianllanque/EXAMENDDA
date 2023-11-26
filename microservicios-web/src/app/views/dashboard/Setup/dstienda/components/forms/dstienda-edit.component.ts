@@ -3,7 +3,7 @@ import {abcForms} from 'src/environments/generals';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ClientsService} from "../../../../../../providers/services/setup/clients.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {Client} from "../../models/dstienda";
+import {Dstienda} from "../../models/dstienda";
 
 @Component({
   selector: 'app-client-edit',
@@ -91,7 +91,7 @@ import {Client} from "../../models/dstienda";
 export class DstiendaEditComponent implements OnInit {
   abcForms: any;
   public idClient: number = 0;
-  public client = new Client();
+  public dstiendas= new Dstienda();
   clientForm = new FormGroup({
     id: new FormControl(0, [Validators.required]),
     nombre: new FormControl('', [Validators.required]),
@@ -121,7 +121,7 @@ export class DstiendaEditComponent implements OnInit {
 
   getClientById(idClient: number): void {
     this.clientsService.getById$(idClient).subscribe(response => {
-      this.client = response;
+      this.dstiendas = response;
       // @ts-ignore
       this.clientForm.patchValue(this.client);
     });

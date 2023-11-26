@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82192cd3-8c71-4030-b60a-d8c7b70511a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/components/list/compr-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/components/list/compr-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/models/compr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../microservicios-web/src/app/views/dashboard/Setup/compr/models/compr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-venta/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-venta/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-cliente/.idea/ms-cliente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cliente/.idea/ms-cliente.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-venta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-venta/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +34,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/DAD-2023-4/EXAMENDDA/Datos-Tienda-Service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/santajr/Documents/PI-APD/EXAMENDDA/Datos-Tienda-Service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ms-dstientda" />
@@ -78,6 +81,8 @@
       <workItem from="1700451987421" duration="168000" />
       <workItem from="1700452519360" duration="12000" />
       <workItem from="1700487178328" duration="678000" />
+      <workItem from="1700971486320" duration="337000" />
+      <workItem from="1701010155985" duration="281000" />
     </task>
     <servers />
   </component>
